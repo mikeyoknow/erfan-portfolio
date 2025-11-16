@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>About Me – Erfan Razmand</title>
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <style>
+        /* Apple-style full page enhancements */
+
+        .hero-wrapper {
+            margin-top: 140px;
+            padding: 60px;
+            border-radius: 28px;
+            background: linear-gradient(145deg, #ffffff 0%, #f6f6f9 100%);
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+        }
+
+        .hero-name {
+            font-size: 48px;
+            font-weight: 800;
+            color: #1c1c1e;
+            margin-bottom: 10px;
+        }
+
+        .hero-sub {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 700px;
+            color: #47474a;
+        }
+
+        /* Highlights section */
+        .highlights {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .highlight-box {
+            flex: 1;
+            padding: 20px;
+            border-radius: 18px;
+            background: #ffffff;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+        }
+
+        .highlight-title {
+            font-size: 16px;
+            color: #0071e3;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .highlight-desc {
+            font-size: 15px;
+            color: #333;
+        }
+
+        /* Section styling */
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+
+        .section-text {
+            font-size: 18px;
+            line-height: 1.85;
+            color: #2c2c2e;
+            max-width: 900px;
+        }
+
+        /* Two-column layout */
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        /* Quote */
+        .quote-box {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 600;
+            font-style: italic;
+            padding: 30px 0;
+            color: #1c1c1e;
+        }
+
+        .divider {
+            height: 1px;
+            background: #d5d5d7;
+            margin: 50px 0;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div class="nav-container">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link nav-active">About Me</a>
+    <a href="career.html" class="nav-link">Career</a>
+</div>
+
+<!-- CONTENT -->
+<div class="section fade">
+
+    <!-- HERO SECTION -->
+    <div class="hero-wrapper fade">
+        <img class="profile-img" src="assets/profile.jpg" alt="Profile Photo" />
+
+        <div>
+            <h1 class="hero-name">Erfan Razmand</h1>
+            <p class="hero-sub">
+                Computer Science student at York University, Technical Systems Analyst Co-op at RBC,
+                and a builder focused on creating meaningful, human-centered technology. My work
+                blends engineering, design thinking, and impact-driven innovation.
+            </p>
+        </div>
+    </div>
+
+    <!-- HIGHLIGHTS (3 small boxes) -->
+    <div class="highlights fade">
+        <div class="highlight-box">
+            <div class="highlight-title">Origin</div>
+            <div class="highlight-desc">Tehran, Iran</div>
+        </div>
+        <div class="highlight-box">
+            <div class="highlight-title">Focus</div>
+            <div class="highlight-desc">Software Development & Data Systems</div>
+        </div>
+        <div class="highlight-box">
+            <div class="highlight-title">Current Role</div>
+            <div class="highlight-desc">Technical Systems Analyst – RBC</div>
+        </div>
+    </div>
+
+    <!-- FIRST DIVIDER -->
+    <div class="divider"></div>
+
+    <!-- BIO SECTIONS (TWO COLUMNS) -->
+    <h2 class="section-title fade">My Story</h2>
+
+    <div class="bio-grid fade">
+
+        <!-- LEFT SIDE -->
+        <div class="section-text">
+            <strong>Where It Started</strong><br><br>
+            I grew up in <strong>Tehran, Iran</strong>, a diverse, vibrant, and endlessly creative city.
+            Being surrounded by people from different backgrounds taught me empathy, persistence, and the
+            importance of shared understanding.
+            <br><br>
+            These experiences shaped my approach to teamwork, problem-solving, and communication — skills
+            that continue to guide me academically and professionally.
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="section-text">
+            <strong>The Path I’m On</strong><br><br>
+            At York University’s <strong>Lassonde School of Engineering</strong>, I discovered how engineering blends
+            creativity and precision. I was drawn to software because it gives me the freedom to build,
+            experiment, and turn ideas into something real.
+            <br><br>
+            During my Co-op at RBC and while developing <strong>Tomorrow’s Trust</strong>, I gained a deeper understanding
+            of both technical and entrepreneurial environments — a combination that continues to push my thinking
+            forward.
+        </div>
+    </div>
+
+    <!-- SECOND DIVIDER -->
+    <div class="divider"></div>
+
+    <!-- INSPIRATION -->
+    <h2 class="section-title fade">What Inspires Me</h2>
+    <p class="section-text fade">
+        One of my biggest inspirations was my high school computer science teacher. He believed that
+        creativity is just as important as logical precision. That perspective helped shape how I view
+        engineering — as a form of storytelling.
+        <br><br>
+        I believe the best engineers are people who understand human needs deeply and design solutions
+        that improve lives, even in small ways.
+    </p>
+
+    <!-- QUOTE -->
+    <div class="quote-box fade">
+        “Build what you wish existed.”
+    </div>
+
+</div>
+
+</body>
+</html>
