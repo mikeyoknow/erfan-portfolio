@@ -32,37 +32,41 @@ a {
 /* ------------------------------
    TOP NAVIGATION
 -------------------------------*/
-
+/* GLOBAL FLOATING NAV */
 .nav-container {
     position: fixed;
-    top: 15px;
+    top: 25px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(16px);
-    border-radius: 40px;
-    padding: 10px 26px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 10px 22px;
     display: flex;
-    gap: 26px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-    z-index: 999;
+    gap: 22px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+    z-index: 1000;
 }
 
 .nav-link {
     font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
     padding: 8px 14px;
-    border-radius: 20px;
+    border-radius: 12px;
     transition: 0.25s;
-    color: #3a3a3c;
 }
 
 .nav-link:hover {
-    background: #e5e5ea;
+    background: rgba(0, 113, 227, 0.08);
+    color: #0071e3;
 }
 
 .nav-active {
     background: #0071e3;
-    color: white !important;
+    color: white;
+    box-shadow: 0 6px 16px rgba(0,113,227,0.35);
 }
 
 /* ------------------------------
