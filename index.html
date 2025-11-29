@@ -4,34 +4,114 @@
     <meta charset="UTF-8">
     <title>Erfan Razmand – Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
 
-<!-- Floating Navigation (Global) -->
+<!-- Floating Navigation -->
 <div class="nav-container">
-    <a href="index.html" class="nav-link">Home</a>
+    <a href="index.html" class="nav-link nav-active">Home</a>
     <a href="about.html" class="nav-link">About Me</a>
     <a href="career.html" class="nav-link">Career</a>
     <a href="goals.html" class="nav-link">Goals</a>
     <a href="projects.html" class="nav-link">Projects</a>
 </div>
 
-<!-- Main Section -->
-<div class="section fade">
-    <h1 class="page-title">Welcome</h1>
+<main class="page">
+    <div class="page-inner">
 
-    <div class="card">
-        <p style="font-size: 17px; line-height: 1.7;">
-            Welcome to my personal portfolio. I'm <strong>Erfan Razmand</strong>, a Computer Science student at
-            York University and Technical Systems Analyst Co-op at RBC.
-        </p>
+        <!-- HERO -->
+        <section class="hero-card hero-layout fade">
+            <div>
+                <p class="section-kicker">Welcome</p>
+                <h1 class="hero-heading">Hi, I’m Erfan Razmand.</h1>
+                <p class="hero-subtitle">
+                    Computer Science student at York University and Technical Systems Analyst Co-op at RBC.
+                    I build human-centred, reliable systems across backend services, risk-aware infrastructure,
+                    and user-friendly applications.
+                </p>
 
-        <p style="font-size: 17px; line-height: 1.7; margin-top: 15px;">
-            Explore the site to learn more about my background, interests, and professional experience.
-        </p>
+                <div style="margin-top: 26px; display:flex; gap:12px; flex-wrap:wrap;">
+                    <a href="about.html" class="btn-primary">
+                        <i data-lucide="user"></i> Learn more about me
+                    </a>
+                    <a href="projects.html" class="btn-ghost">
+                        <i data-lucide="code"></i> View my work
+                    </a>
+                </div>
+
+                <div class="chip-row">
+                    <span class="chip">Technical Systems Analyst · RBC</span>
+                    <span class="chip">YorkU – Lassonde School of Engineering</span>
+                    <span class="chip">Software · Data · Risk</span>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:center;">
+                <div class="card"
+                     style="position:relative; border-radius:28px; padding:26px 24px; text-align:center;">
+                    <img src="assets/profile.jpg" alt="Erfan Razmand" class="avatar-lg">
+                    <p style="margin-top:14px; font-size:14px; color:#4b5563;">
+                        Blending engineering, design thinking, and business context to
+                        build solutions that are both technically sound and meaningful.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK NAV CARDS -->
+        <section style="margin-top:40px;" class="fade">
+            <div class="grid-3">
+                <a href="about.html" class="card-subtle" style="text-decoration:none; color:inherit;">
+                    <p class="section-kicker">Profile</p>
+                    <h2 class="section-heading" style="font-size:20px;">About Me</h2>
+                    <p class="section-body" style="font-size:14px; max-width:none;">
+                        Learn more about my background, story, and what motivates the way I build and work.
+                    </p>
+                </a>
+
+                <a href="career.html" class="card-subtle" style="text-decoration:none; color:inherit;">
+                    <p class="section-kicker">Experience</p>
+                    <h2 class="section-heading" style="font-size:20px;">Career</h2>
+                    <p class="section-body" style="font-size:14px; max-width:none;">
+                        Explore my roles at RBC, Rogers, and Goodself, as well as my technical skill set.
+                    </p>
+                </a>
+
+                <a href="goals.html" class="card-subtle" style="text-decoration:none; color:inherit;">
+                    <p class="section-kicker">Growth</p>
+                    <h2 class="section-heading" style="font-size:20px;">Goals & Portfolio</h2>
+                    <p class="section-body" style="font-size:14px; max-width:none;">
+                        See how my goals, values, and work samples connect across school, co-op, and side projects.
+                    </p>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT FOOTER -->
+        <section class="contact-footer fade" style="margin-top:70px;">
+            <div>
+                <h2>Let’s Connect</h2>
+                <p>
+                    Whether it’s about internships, collaboration, or feedback on my work,
+                    I’m always open to meaningful conversations.
+                </p>
+            </div>
+            <form>
+                <input class="contact-input" type="text" placeholder="Your name">
+                <input class="contact-input" type="email" placeholder="Your email">
+                <textarea class="contact-textarea" placeholder="Your message"></textarea>
+                <button type="submit" class="btn-primary" style="justify-content:center;">
+                    <i data-lucide="send"></i> Send
+                </button>
+            </form>
+        </section>
+
+        <p class="footer-meta">© 2025 Erfan Razmand • Portfolio</p>
+
     </div>
-</div>
+</main>
 
+<script>lucide.createIcons();</script>
 </body>
 </html>

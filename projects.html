@@ -5,94 +5,9 @@
   <title>Projects – Erfan Razmand</title>
   <link rel="stylesheet" href="assets/style.css" />
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <style>
-    .hero-card {
-      margin-top: 140px;
-      padding: 60px;
-      border-radius: 28px;
-      background: linear-gradient(145deg, #ffffff 0%, #f6f6f9 100%);
-      box-shadow: 0 18px 50px rgba(0,0,0,0.12);
-    }
-
-    .hero-title {
-      font-size: 46px;
-      font-weight: 800;
-      color: #1c1c1e;
-      margin-bottom: 18px;
-    }
-
-    .hero-text {
-      font-size: 18px;
-      max-width: 760px;
-      line-height: 1.7;
-      color: #4a4a4c;
-    }
-
-    /* APPLE PRODUCT GRID */
-    .grid {
-      margin-top: 40px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 28px;
-    }
-
-    .tile {
-      background: #fff;
-      border-radius: 28px;
-      padding: 24px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-      transition: 0.3s;
-    }
-
-    .tile:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.12);
-    }
-
-    .tile-img {
-      width: 100%;
-      height: 220px;
-      border-radius: 20px;
-      object-fit: cover;
-      margin-bottom: 16px;
-    }
-
-    .tile-title {
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .tile-desc {
-      font-size: 16px;
-      color: #555;
-      line-height: 1.6;
-      margin-bottom: 18px;
-    }
-
-    .btn-view {
-      padding: 10px 18px;
-      border-radius: 14px;
-      background: #0071e3;
-      color: white;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 15px;
-      transition: 0.25s;
-    }
-
-    .btn-view:hover {
-      background: #0a84ff;
-      transform: translateY(-2px);
-    }
-  </style>
 </head>
-
 <body>
 
-<!-- NAV -->
 <div class="nav-container">
   <a href="index.html" class="nav-link">Home</a>
   <a href="about.html" class="nav-link">About Me</a>
@@ -101,57 +16,113 @@
   <a href="projects.html" class="nav-link nav-active">Projects</a>
 </div>
 
-<div class="section fade">
+<main class="page">
+  <div class="page-inner">
 
-  <!-- HERO -->
-  <div class="hero-card fade">
-    <h1 class="hero-title">Course Projects & Papers</h1>
-    <p class="hero-text">
-      A curated collection of academic work, technical builds, and major school projects
-      completed throughout my Computer Science degree.
-    </p>
+    <!-- HERO -->
+    <section class="hero-card fade">
+      <p class="section-kicker">Projects</p>
+      <h1 class="hero-heading">Course Projects & Papers</h1>
+      <p class="hero-subtitle">
+        A curated collection of academic work, technical builds, and major school projects
+        completed throughout my Computer Science degree.
+      </p>
+    </section>
+
+    <!-- PROJECT GRID -->
+    <section style="margin-top:50px;" class="fade">
+      <div class="project-grid">
+
+        <article class="project-tile">
+          <img src="assets/xv6.jpg" alt="xv6 scheduler">
+          <div class="project-content">
+            <div class="project-title">Operating Systems – xv6 Scheduler</div>
+            <p class="project-desc">
+              Implemented a priority-based CPU scheduler with aging for xv6,
+              exploring trade-offs in fairness and performance.
+            </p>
+            <div class="chip-row">
+              <span class="chip">C</span>
+              <span class="chip">xv6</span>
+              <span class="chip">OS concepts</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-tile">
+          <img src="assets/db.jpg" alt="database system">
+          <div class="project-content">
+            <div class="project-title">Database Systems – CruiseCritic DB</div>
+            <p class="project-desc">
+              Designed full SQL schema, ERD, and implemented queries, constraints,
+              and triggers for a cruise review platform.
+            </p>
+            <div class="chip-row">
+              <span class="chip">SQL</span>
+              <span class="chip">Schema design</span>
+              <span class="chip">ERD</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-tile">
+          <img src="assets/ux.jpg" alt="UX / habit tracker">
+          <div class="project-content">
+            <div class="project-title">Mobile App – Habit Tracker</div>
+            <p class="project-desc">
+              Designed UX flows and built Swift UI components for a habit-tracking app
+              focused on simple, clear daily actions.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Swift</span>
+              <span class="chip">iOS</span>
+              <span class="chip">UX design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-tile">
+          <img src="assets/tree.jpg" alt="decision tree AI">
+          <div class="project-content">
+            <div class="project-title">AI Project – Decision Trees</div>
+            <p class="project-desc">
+              Built a decision tree classifier with custom entropy calculations
+              and pruning to balance accuracy and generalization.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">Machine Learning</span>
+              <span class="chip">Decision Trees</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT FOOTER -->
+    <section class="contact-footer fade">
+      <div>
+        <h2>Project Discussions</h2>
+        <p>
+          If any of these projects interest you, I’d be happy to walk through the
+          code, design decisions, or results in more depth.
+        </p>
+      </div>
+      <form>
+        <input class="contact-input" type="text" placeholder="Your name">
+        <input class="contact-input" type="email" placeholder="Your email">
+        <textarea class="contact-textarea" placeholder="Which project are you curious about?"></textarea>
+        <button type="submit" class="btn-primary" style="justify-content:center;">
+          <i data-lucide="send"></i> Send
+        </button>
+      </form>
+    </section>
+    <p class="footer-meta">© 2025 Erfan Razmand • Projects</p>
+
   </div>
-
-  <!-- PROJECT GRID -->
-  <div class="grid fade">
-
-    <!-- PROJECT 1 -->
-    <div class="tile fade">
-      <img src="assets/xv6.jpg" class="tile-img">
-      <h3 class="tile-title">Operating Systems – xv6 Scheduler</h3>
-      <p class="tile-desc">Implemented a priority-based CPU scheduler with aging for xv6.</p>
-      <a class="btn-view"><i data-lucide="external-link"></i> View Project</a>
-    </div>
-
-    <!-- PROJECT 2 -->
-    <div class="tile fade">
-      <img src="assets/db.jpg" class="tile-img">
-      <h3 class="tile-title">Database Systems – CruiseCritic DB</h3>
-      <p class="tile-desc">Designed full SQL schema, ERD, and implemented queries + triggers.</p>
-      <a class="btn-view"><i data-lucide="external-link"></i> View Project</a>
-    </div>
-
-    <!-- PROJECT 3 -->
-    <div class="tile fade">
-      <img src="assets/ux.jpg" class="tile-img">
-      <h3 class="tile-title">Mobile App – Habit Tracker</h3>
-      <p class="tile-desc">Designed UX flows and built Swift UI components for habit tracking app.</p>
-      <a class="btn-view"><i data-lucide="external-link"></i> View Project</a>
-    </div>
-
-    <!-- PROJECT 4 -->
-    <div class="tile fade">
-      <img src="assets/tree.jpg" class="tile-img">
-      <h3 class="tile-title">AI Project – Decision Trees</h3>
-      <p class="tile-desc">Built a decision tree classifier with custom entropy and pruning.</p>
-      <a class="btn-view"><i data-lucide="external-link"></i> View Project</a>
-    </div>
-
-  </div>
-
-</div>
+</main>
 
 <script>lucide.createIcons();</script>
-
 </body>
 </html>
