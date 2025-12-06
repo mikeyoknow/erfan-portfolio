@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
+<body style="background-image: url('assets/bg-pattern.svg');
+             background-size: 900px;
+             background-repeat: repeat;
+             background-attachment: fixed;">
 
 <!-- Floating Navigation -->
 <div class="nav-container">
@@ -15,6 +18,25 @@
     <a href="career.html" class="nav-link">Career</a>
     <a href="goals.html" class="nav-link">Goals</a>
     <a href="projects.html" class="nav-link">Projects</a>
+    <div style="display:flex; gap:14px; margin-left:14px;">
+        <a href="https://github.com/mikeyoknow" target="_blank"
+           style="display:flex; align-items:center; justify-content:center;
+            width:34px; height:34px; border-radius:50%;
+            background:rgba(255,255,255,0.55);
+            box-shadow:0 4px 12px rgba(0,0,0,0.12);
+            backdrop-filter:blur(12px); transition:0.25s;">
+            <i data-lucide="github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/erfanrazmand/" target="_blank"
+           style="display:flex; align-items:center; justify-content:center;
+            width:34px; height:34px; border-radius:50%;
+            background:rgba(255,255,255,0.55);
+            box-shadow:0 4px 12px rgba(0,0,0,0.12);
+            backdrop-filter:blur(12px); transition:0.25s;">
+            <i data-lucide="linkedin"></i>
+        </a>
+    </div>
 </div>
 
 <main class="page">
@@ -57,6 +79,228 @@
                     </p>
                 </div>
             </div>
+        </section>
+
+        <!-- PURPOSE OF PORTFOLIO -->
+        <section class="card fade" style="margin-top:60px;">
+            <p class="section-kicker">Purpose</p>
+            <h2 class="section-heading">Why I Built This Portfolio</h2>
+            <p class="section-body" style="margin-top:12px;">
+                This portfolio serves as a curated record of my academic, professional, and personal
+                development as a Computer Science student. Its purpose is to highlight the connection
+                between my learning, my experiences, and my long-term goals. It demonstrates not only
+                what I’ve done, but how I think — how I approach problems, grow from challenges, and
+                apply engineering principles with intention.
+                <br><br>
+                This site also acts as a long-term professional tool. By documenting key projects,
+                reflections, and work samples, it allows me to track my growth, refine my story, and
+                present a clear picture of who I am becoming as an engineer.
+            </p>
+        </section>
+
+        <!-- FINAL REFLECTION -->
+        <section class="card fade" style="margin-top:60px;">
+            <p class="section-kicker">Reflection</p>
+            <h2 class="section-heading">What I Learned</h2>
+            <p class="section-body" style="margin-top:12px;">
+                Throughout this course, I’ve gained a deeper understanding of my own learning journey.
+                Creating this portfolio required me to reflect on how my academic work, projects, and
+                professional experiences connect to the goals I’m working toward. I realized how important
+                it is to communicate clearly, organize my work with intention, and think critically about
+                how I present myself as an emerging engineer.
+                <br><br>
+                This process helped me identify my strengths — analytical thinking, problem-solving, and
+                communicating technical ideas — while also showing me areas for growth. I learned that
+                engineering is not just about solving problems, but understanding context, impact, and user
+                needs. Overall, building this portfolio strengthened both my technical identity and my
+                confidence in how I express myself professionally.
+            </p>
+        </section>
+
+        <!-- SELF-CRITIQUE -->
+        <section class="card fade" style="margin-top:60px;">
+            <!-- FEEDBACK SECTION -->
+            <section class="card fade" style="margin-top:60px;">
+                <p class="section-kicker">Feedback</p>
+                <h2 class="section-heading">Share Your Thoughts</h2>
+
+                <p class="section-body" style="margin-top:12px;">
+                    I value feedback and continuous improvement. If you explored this website, I would love to hear
+                    about your experience. Your insights help me understand how others interact with my work and how
+                    I can make this portfolio even better.
+                </p>
+
+                <form style="margin-top:24px; display:grid; gap:20px;">
+
+                    <!-- QUESTION 1 -->
+                    <div>
+                        <label style="font-size:15px; font-weight:600; color:#111;">1. Was the website easy to navigate?</label>
+                        <select class="contact-input" style="margin-top:6px; padding:12px;">
+                            <option>Yes, very easy</option>
+                            <option>Yes, somewhat easy</option>
+                            <option>Neutral</option>
+                            <option>A bit confusing</option>
+                            <option>No, difficult to navigate</option>
+                        </select>
+                    </div>
+
+                    <!-- QUESTION 2 -->
+                    <div>
+                        <label style="font-size:15px; font-weight:600; color:#111;">2. How would you rate the visual design?</label>
+                        <select class="contact-input" style="margin-top:6px; padding:12px;">
+                            <option>Excellent</option>
+                            <option>Good</option>
+                            <option>Average</option>
+                            <option>Needs improvement</option>
+                        </select>
+                    </div>
+
+                    <!-- QUESTION 3 -->
+                    <div>
+                        <label style="font-size:15px; font-weight:600; color:#111;">3. Does this portfolio clearly represent my skills and experience?</label>
+                        <select class="contact-input" style="margin-top:6px; padding:12px;">
+                            <option>Yes, very clearly</option>
+                            <option>Somewhat clearly</option>
+                            <option>Neutral</option>
+                            <option>Could be clearer</option>
+                        </select>
+                    </div>
+
+                    <!-- QUESTION 4 -->
+                    <div>
+                        <label style="font-size:15px; font-weight:600; color:#111;">4. Additional comments or suggestions:</label>
+                        <textarea class="contact-textarea" style="margin-top:6px; height:100px;"
+                                  placeholder="Write any feedback you’d like to share..."></textarea>
+                    </div>
+
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit" class="btn-primary" style="width: fit-content;">
+                        <i data-lucide="send"></i> Submit Feedback
+                    </button>
+
+                </form>
+            </section>
+
+            <p class="section-kicker">Self-Critique</p>
+            <h2 class="section-heading">Reflecting on My e-Portfolio</h2>
+            <p class="section-body" style="margin-top:12px;">
+                While creating this portfolio, I focused on building a clean, consistent experience that
+                reflects who I am as a learner and developer. I chose an Apple-inspired design style to
+                emphasize clarity, professionalism, and attention to detail — qualities I value in both
+                engineering work and personal presentation.
+                <br><br>
+                If I were to expand or improve this site further, I would add deeper write-ups for each
+                project, integrate interactive demos, and include more visuals and media to show how I
+                approach design and problem-solving. I believe this portfolio is a strong starting point,
+                and I see it as something I will continue improving throughout my degree and early career.
+            </p>
+        </section>
+
+        <!-- FEEDBACK SECTION - UPGRADED -->
+        <section class="card fade" style="margin-top:60px;">
+            <p class="section-kicker">Feedback</p>
+            <h2 class="section-heading">Share Your Thoughts</h2>
+
+            <p class="section-body" style="margin-top:12px;">
+                I'd love to hear your thoughts on the design, usability, and clarity of this portfolio.
+                Your feedback helps me understand how others experience my work, and how I can continue improving.
+            </p>
+
+            <!-- EMOJI RATING -->
+            <div style="margin-top:30px;">
+                <label style="font-size:15px; font-weight:600; color:#111;">
+                    How did the website make you feel overall?
+                </label>
+
+                <div style="display:flex; gap:18px; margin-top:12px; font-size:26px;">
+                    <span class="emoji-rate" style="cursor:pointer;">😣</span>
+                    <span class="emoji-rate" style="cursor:pointer;">😕</span>
+                    <span class="emoji-rate" style="cursor:pointer;">😐</span>
+                    <span class="emoji-rate" style="cursor:pointer;">🙂</span>
+                    <span class="emoji-rate" style="cursor:pointer; font-size:30px;">🤩</span>
+                </div>
+            </div>
+
+            <!-- STAR RATING -->
+            <div style="margin-top:32px;">
+                <label style="font-size:15px; font-weight:600; color:#111;">
+                    Rate your experience (design · clarity · usability):
+                </label>
+
+                <div style="display:flex; gap:8px; margin-top:10px;">
+                    <i data-lucide="star" class="star-rate"></i>
+                    <i data-lucide="star" class="star-rate"></i>
+                    <i data-lucide="star" class="star-rate"></i>
+                    <i data-lucide="star" class="star-rate"></i>
+                    <i data-lucide="star" class="star-rate"></i>
+                </div>
+            </div>
+
+            <!-- HOVER PROGRESS BAR -->
+            <div style="margin-top:40px;">
+                <label style="font-size:15px; font-weight:600; color:#111;">
+                    How smooth was navigation?
+                </label>
+                <div class="progress-wrapper">
+                    <div class="progress-hover"></div>
+                </div>
+            </div>
+
+            <!-- FORM QUESTIONS -->
+            <form style="margin-top:40px; display:grid; gap:20px;">
+
+                <!-- NAVIGATION QUESTION -->
+                <div>
+                    <label style="font-size:15px; font-weight:600; color:#111;">1. Was the website easy to navigate?</label>
+                    <select class="contact-input" style="margin-top:6px; padding:12px;">
+                        <option>Yes, very easy</option>
+                        <option>Yes, somewhat easy</option>
+                        <option>Neutral</option>
+                        <option>A bit confusing</option>
+                        <option>No, difficult to navigate</option>
+                    </select>
+                </div>
+
+                <!-- VISUAL DESIGN -->
+                <div>
+                    <label style="font-size:15px; font-weight:600; color:#111;">2. How would you rate the visual design?</label>
+                    <select class="contact-input" style="margin-top:6px; padding:12px;">
+                        <option>Excellent</option>
+                        <option>Good</option>
+                        <option>Average</option>
+                        <option>Needs improvement</option>
+                    </select>
+                </div>
+
+                <!-- CLARITY -->
+                <div>
+                    <label style="font-size:15px; font-weight:600; color:#111;">3. Does this portfolio clearly represent my skills and experience?</label>
+                    <select class="contact-input" style="margin-top:6px; padding:12px;">
+                        <option>Yes, very clearly</option>
+                        <option>Somewhat clearly</option>
+                        <option>Neutral</option>
+                        <option>Could be clearer</option>
+                    </select>
+                </div>
+
+                <!-- ADVANCED FEEDBACK (COLLAPSIBLE) -->
+                <div style="margin-top:14px;">
+                    <details style="border-radius:16px; background:#f9fafb; padding:16px 20px;">
+                        <summary style="cursor:pointer; font-weight:600; font-size:15px;">
+                            Additional Feedback (Click to expand)
+                        </summary>
+
+                        <textarea class="contact-textarea" style="margin-top:12px; height:120px;"
+                                  placeholder="Write any comments, suggestions, or improvements here..."></textarea>
+                    </details>
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="btn-primary" style="width: fit-content;">
+                    <i data-lucide="send"></i> Submit Feedback
+                </button>
+
+            </form>
         </section>
 
         <!-- QUICK NAV CARDS -->
@@ -113,5 +357,22 @@
 </main>
 
 <script>lucide.createIcons();</script>
-</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealElements = document.querySelectorAll(".fade");
+
+        const revealOnScroll = () => {
+            const triggerBottom = window.innerHeight * 0.90;
+
+            revealElements.forEach((el) => {
+                const boxTop = el.getBoundingClientRect().top;
+                if (boxTop < triggerBottom) el.classList.add("visible");
+            });
+        };
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    });
+</script>
+</>
 </html>

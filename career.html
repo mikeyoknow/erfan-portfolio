@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="assets/style.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
+<body style="background-image: url('assets/bg-pattern.svg');
+             background-size: 900px;
+             background-repeat: repeat;
+             background-attachment: fixed;">
 
 <div class="nav-container">
     <a href="index.html" class="nav-link">Home</a>
@@ -14,7 +17,27 @@
     <a href="career.html" class="nav-link nav-active">Career</a>
     <a href="goals.html" class="nav-link">Goals</a>
     <a href="projects.html" class="nav-link">Projects</a>
+    <div style="display:flex; gap:14px; margin-left:14px;">
+        <a href="https://github.com/mikeyoknow" target="_blank"
+           style="display:flex; align-items:center; justify-content:center;
+            width:34px; height:34px; border-radius:50%;
+            background:rgba(255,255,255,0.55);
+            box-shadow:0 4px 12px rgba(0,0,0,0.12);
+            backdrop-filter:blur(12px); transition:0.25s;">
+            <i data-lucide="github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/erfanrazmand/" target="_blank"
+           style="display:flex; align-items:center; justify-content:center;
+            width:34px; height:34px; border-radius:50%;
+            background:rgba(255,255,255,0.55);
+            box-shadow:0 4px 12px rgba(0,0,0,0.12);
+            backdrop-filter:blur(12px); transition:0.25s;">
+            <i data-lucide="linkedin"></i>
+        </a>
+    </div>
 </div>
+
 
 <main class="page">
     <div class="page-inner">
@@ -221,5 +244,22 @@
 </main>
 
 <script>lucide.createIcons();</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealElements = document.querySelectorAll(".fade");
+
+        const revealOnScroll = () => {
+            const triggerBottom = window.innerHeight * 0.90;
+
+            revealElements.forEach((el) => {
+                const boxTop = el.getBoundingClientRect().top;
+                if (boxTop < triggerBottom) el.classList.add("visible");
+            });
+        };
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    });
+</script>
 </body>
 </html>

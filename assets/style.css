@@ -7,6 +7,15 @@
     padding: 0;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
+.page img {
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    border-radius: 22px;
+}
+
 html, body {
     height: 100%;
 }
@@ -509,5 +518,93 @@ body {
     .nav-link {
         font-size: 13px;
         padding-inline: 10px;
+    }
+
+    /* Emoji hover effects */
+    .emoji-rate:hover {
+        transform: scale(1.25);
+        transition: 0.15s ease;
+    }
+
+    /* Star rating */
+    .star-rate {
+        width: 26px;
+        height: 26px;
+        stroke: #c7c7c7;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+    .star-rate:hover {
+        stroke: #0a84ff;
+        transform: scale(1.15);
+    }
+
+    /* Hover progress bar */
+    .progress-wrapper {
+        width: 100%;
+        height: 12px;
+        background: #e5e7eb;
+        border-radius: 999px;
+        overflow: hidden;
+        margin-top:10px;
+        position: relative;
+    }
+
+    .progress-hover {
+        width: 0%;
+        height: 100%;
+        background: #0a84ff;
+        border-radius: 999px;
+        transition: width 0.4s ease;
+    }
+
+    .progress-wrapper:hover .progress-hover {
+        width: 85%; /* animate to 85% when hovered */
+    }
+    /* ==== MICROINTERACTIONS ==== */
+
+    /* Slight lift on hover for cards */
+    .card:hover,
+    .card-subtle:hover,
+    .portfolio-card:hover,
+    .timeline-item:hover,
+    .project-tile:hover {
+        transform: translateY(-6px);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    /* Soft glow for hero cards */
+    .hero-card:hover {
+        box-shadow: 0 30px 60px rgba(0,0,0,0.18);
+    }
+
+    /* Slight nav hover glow */
+    .nav-link:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    /* Social icons hover */
+    .nav-container a:hover i {
+        transform: scale(1.15);
+        transition: 0.2s ease;
+    }
+
+    /* Buttons hover tilt */
+    .btn-primary:hover {
+        transform: translateY(-2px) scale(1.02);
+    }
+
+    .btn-ghost:hover {
+        transform: translateY(-1px) scale(1.02);
+    }
+    .fade {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .fade.visible {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
